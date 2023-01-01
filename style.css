@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anybody", cursive;
+}
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(99, 148, 239);
+}
+.box {
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 900px;
+  height: 600px;
+  background-color: rgb(2, 3, 102);
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 10rem; */
+  top: 2rem;
+  /* margin: auto; */
+}
+.todo-list {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* align-items: center;
+  
+  
+  */
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 2rem;
+}
+.input-task {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-task {
+  height: 50px;
+  width: 300px;
+  /* text-align: center; */
+  padding-left: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+}
+.submit {
+  margin-left: 0.3rem;
+  border: none;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: orangered;
+  font-size: 1rem;
+}
+.submit:hover {
+  background-color: rgb(216, 62, 6);
+  cursor: pointer;
+  transition: 1.5s;
+}
+.todo-list-name {
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+.name-delete {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-name {
+  /* width: 2rem; */
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.delete {
+  margin-left: 10rem;
+  border: none;
+  background: yellow;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+.delete:hover {
+  cursor: pointer;
+  background: rgb(199, 199, 15);
+  transition: 1.6s;
+}
+.maximum-item {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0.2rem;
+  /* bottom: -13rem; */
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.reset {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  /* border: 2px solid red;
+   */
+  background-color: red;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+.reset:hover {
+  cursor: pointer;
+  transition: 1.3s;
+  background-color: rgb(223, 6, 6);
+}
