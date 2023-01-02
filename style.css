@@ -127,3 +127,23 @@
   transition: 1.3s;
   background-color: rgb(223, 6, 6);
 }
+.link {
+  position: relative;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  bottom: 0.5rem;
+  color: white;
+  margin-top: 4rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.link a {
+  text-decoration: underline;
+  /* color: white; */
+  color: rgb(3 5 95);
+}
+
+.link a:hover {
+  text-decoration: none;
+  transition: 2s;
+}

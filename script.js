@@ -11,7 +11,15 @@ let allToDo;
 
 function toDoList() {
   //   console.log(inputName);
+
   getInputedData = inputName.value.toUpperCase();
+
+  //   console.log(inputName.value.length);
+  //   console.log(getInputedData.length);
+  if (getInputedData.length === 0) {
+    return;
+  }
+
   //   console.log(getInputedData);
   //   console.log(inputName.placeholder);
   inputName.value = "";
@@ -19,6 +27,7 @@ function toDoList() {
    <div class="name-delete">
                     <div class="todo-name">${getInputedData} </div><button class="delete">Delete</button>
                 </div>`;
+
   nameDelete = Array.from(document.querySelectorAll(".name-delete"));
   //   inputName.placeholder = "Add The Task";
   //   console.log(getInputedData);
@@ -58,7 +67,8 @@ reset.addEventListener("click", function () {
 // console.log(deleteBtn);
 submit.addEventListener("click", toDoList);
 document.addEventListener("keydown", function (e) {
-  //   if (e.key === "Enter") {
-  //     // toDoList();
-  //   }
+  //   toDoList();
+  if (e.key === "Enter") {
+    toDoList();
+  }
 });
